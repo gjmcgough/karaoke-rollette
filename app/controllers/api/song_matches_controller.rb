@@ -6,7 +6,7 @@ class Api::SongMatchesController < ApplicationController
   def create
     @singer = random_singer
     @random_song = random_song
-    @song_match = SongMatch.new(user_id: @singer.id, singer_name: @singer.name, song_title: @random_song.title, song_artist: @random_song.artist, song_id: @random_song.id, party_id: @user.party.id)
+    @song_match = SongMatch.new(user_id: @singer.id, singer_name: @singer.name, song_title: @random_song.title, song_artist: @random_song.artist, song_id: @random_song.id, party_id: @user.party.id, image_src: @random_song.image_src)
     @song_match.save
     # check to_json if not getting correct data
     render json: @song_match.to_json

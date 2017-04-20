@@ -22,7 +22,7 @@ gem 'dotenv'
 # gem 'capistrano-rails', group: :development
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-gem 'rack-cors'
+# gem 'rack-cors'
 gem 'figaro'
 gem 'nokogiri', '1.6.7.2'
 gem 'slim'
